@@ -505,7 +505,7 @@ def intro_screen(game_state, player, current_game_map):
                     running_intro = False
                     game_state.reset()
                     start_screen(game_state)
-        if (current_time - start_time) > 100:
+        if (current_time - start_time) > 27000:
             running_intro = False
 
         pygame.display.update()
