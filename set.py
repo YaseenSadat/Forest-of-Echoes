@@ -159,7 +159,7 @@ def get_health_decrement(game_state) -> int:
     elif game_state.current_difficulty() == 'medium':
         health_decrement_interval = 16000
     elif game_state.current_difficulty() == 'hard':
-        health_decrement_interval = 1000
+        health_decrement_interval = 12000
     else:
         raise ValueError
     return health_decrement_interval
