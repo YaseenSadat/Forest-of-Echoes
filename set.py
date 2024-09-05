@@ -67,48 +67,46 @@ def display_intro(screen, start_time):
     return_text = pixel_40.render('RETURN', True, WHITE)
     return_text_rect = return_text.get_rect(topleft=(24, 20))
     screen.blit(return_text, return_text_rect)
+    screen.blit(small_button_image, (1300, 880))
+    proceed_text = pixel_35.render('PROCEED', True, WHITE)
+    screen.blit(proceed_text, (1320, 895))
 
     text1 = pixel_40.render('Story Intro', True, WHITE)
     screen.blit(text1, (680, 100))
 
     text_lines = [
-        "     Deep within the enigmatic expanse of the Whispering Woods, a legend persists, veiled in the",
-        "shroud of twilight and tangled roots. This forest, ancient and whispering secrets of old, guards the",
-        "path to a mysterious treasure, a chest filled with jewels worth millions and the elusive promise of",
-        "escape.",
+        "Deep in the heart of the ancient Whispering Woods,",
+        "A legend endures of a hidden treasure chest filled with jewels",
+        "And the promise of escape. The forest, cloaked in twilight",
+        "And tangled roots, guards its secrets well.",
         "",
-        "     You are an intrepid traveler who, by fate or fortune, finds yourself lost amidst the foreboding trees",
-        "as dusk descends. With the canopy closing in and the night creatures stirring, hope seems as",
-        "distant as the setting sun. Yet, scattered through the forest, hidden enigmas crafted by nature",
-        "itself beckon to those daring enough to solve them.",
+        "You, an adventurous traveler,",
+        "Find yourself lost in its depths as night falls.",
+        "Hope fades with the setting sun, but scattered throughout",
+        "The forest are natural riddles, daring you to solve them.",
+        "Many before you have tried, only to vanish",
+        "Becoming whispers among the leaves.",
         "",
-        "     Your journey is fraught with peril, for many have sought the chest's riches and means of escape,",
-        "only to become mere whispers among the leaves. Arm yourself with courage and cunning; the",
-        "forest neither aids nor obstructs, but silently observes as you carve your path through its heart.",
+        "Armed with courage and wit,",
+        "You must navigate the perilous woods.",
+        "Will you uncover its secrets and escape with the treasure,",
+        "Or be claimed by the forest’s timeless tales?",
         "",
-        "     Will you uncover the secrets of the Whispering Woods and claim what countless others have",
-        "sought, or will you, too, fade into the forest's eternal tales?",
-        "",
-        '                                                         ~ Good Luck Traveler! ~'
-
+        "~ Good Luck Traveler! ~"
     ]
 
     current_time = pygame.time.get_ticks()
-    elapsed_time = (current_time - start_time) // 1000
-
+    elapsed_time = (current_time - start_time) // 200
     paragraphs_to_display = elapsed_time // 6
-
-    paragraphs = [
-        text_lines[0:3],
-        text_lines[4:8],
-        text_lines[9:13],
-        text_lines[14:16],
-        text_lines[17:19]
-    ]
+    screen_width = screen.get_width()
 
     for i in range(paragraphs_to_display + 1):
-        if i < len(paragraphs):
-            render_text(screen, paragraphs[i], steph_24, WHITE, (350, 170 + i * 160), 8)
+        if i < len(text_lines):
+            if text_lines[i]:
+                text_surface = steph_30.render(text_lines[i], True, WHITE)
+                text_rect = text_surface.get_rect()
+                x_position = (screen_width - text_rect.width) // 2
+                screen.blit(text_surface, (x_position, 170 + i * 40))
 
 
 def display_text(screen, value):
@@ -155,11 +153,11 @@ def get_health_decrement(game_state) -> int:
     Returns the health decrement interval based on the game difficulty.
     """
     if game_state.current_difficulty() == 'easy':
-        health_decrement_interval = 25000
+        health_decrement_interval = 35000
     elif game_state.current_difficulty() == 'medium':
-        health_decrement_interval = 16000
+        health_decrement_interval = 25000
     elif game_state.current_difficulty() == 'hard':
-        health_decrement_interval = 12000
+        health_decrement_interval = 20000
     else:
         raise ValueError
     return health_decrement_interval
@@ -421,8 +419,8 @@ def display_selection(screen, game_state, which_msg, current_time, msg_start):
 
     screen.blit(pixel_50.render('Dark Mode?', True, GRAY), (150, 350))
     screen.blit(pixel_50.render('Dark Mode?', True, WHITE), (153, 353))
-    rec_text = steph_15.render('Dark Mode is heavily reccomended!', True, WHITE)
-    screen.blit(rec_text, (160, 560))
+    rec_text = steph_20.render('Try Dark Mode for the REAL challenge', True, WHITE)
+    screen.blit(rec_text, (120, 560))
     screen.blit(on_switch if game_state.is_dark_mode() else off_switch, (210, 430))
 
     screen.blit(pixel_50.render('Difficulty?', True, GRAY), (130, 650))
