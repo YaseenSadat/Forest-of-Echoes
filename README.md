@@ -91,8 +91,8 @@ Survival depends on your ability to manage resources, solve puzzles, and avoid t
 
 ## **Credits**
 
-- **Game Developer:** Your Name
-- **Sound Effects and Music:** Various online sound resources (list here, if any).
+- **Game Developer:** Yaseen Sadat
+- **Sound Effects and Music:** Various online sound resources.
 - **Graphics and Art:** AI-generated images and custom assets.
 
 ---
