@@ -5,10 +5,10 @@
 2. [Lore](#lore)
 3. [Gameplay](#gameplay)
 4. [Game Features](#game-features)
-5. [Installation](#installation)
-6. [How to Play](#how-to-play)
-7. [Controls](#controls)
-8. [Credits](#credits)
+5. [How to Play](#how-to-play)
+6. [Controls](#controls)
+7. [Credits](#credits)
+8. [Installation](#installation)
 
 ---
 
@@ -84,11 +84,7 @@ Survival depends on your ability to manage resources, solve puzzles, and avoid t
 ## **Controls**
 
 - **W, A, S, D / Arrow Keys:** Move your character.
-- **Mouse Click:** Interact with objects (e.g., campfires, signs).
-- **E:** Pick up food and keys.
-- **F:** Start campfire.
-- **Esc:** Pause the game or exit.
-
+- **Mouse Click:** Interact with objects and game buttons e.g., campfires, signs).
 ---
 
 ## **Credits**
