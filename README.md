@@ -69,11 +69,42 @@ Survival depends on your ability to manage resources, solve puzzles, and avoid t
 
 ---
 
+## **How to Play**
+
+1. **Objective:** Find the four hidden keys scattered across the forest to unlock the treasure chest, then locate the escape route before the forest claims you.
+   
+2. **Health Management:** Collect food items to restore health and build campfires to regenerate your health in critical moments.
+
+3. **Clue System:** Signs placed throughout the woods will provide hints to the location of keys and solutions to puzzles.
+
+4. **Escape:** After collecting the jewels from the treasure chest, find the hidden escape route to complete your adventure.
+
+---
+
+## **Controls**
+
+- **W, A, S, D / Arrow Keys:** Move your character.
+- **Mouse Click:** Interact with objects (e.g., campfires, signs).
+- **E:** Pick up food and keys.
+- **F:** Start campfire.
+- **Esc:** Pause the game or exit.
+
+---
+
+## **Credits**
+
+- **Game Developer:** Your Name
+- **Sound Effects and Music:** Various online sound resources (list here, if any).
+- **Graphics and Art:** AI-generated images and custom assets.
+
+---
+
 ## **Installation**
 
 1. Clone or download the repository:
    ```bash
    git clone https://github.com/YaseenSadat/Forest-of-Echoes.git
    cd Forest-of-Echoes
-
+   pip install pygame
+   python main.py
 
