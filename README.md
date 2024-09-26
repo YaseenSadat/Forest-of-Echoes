@@ -12,6 +12,8 @@
 
 ---
 
+![Whispering Woods Screenshot](images/Home_Screen.png)
+
 ## **Game Overview**
 
 **Forest of Echoes** is a thrilling adventure game where you find yourself trapped in a mysterious and dark forest. As an adventurous traveler, your only hope of escape is to solve the forest's riddles, find hidden keys, and uncover the secrets of the Whispering Woods. But beware—the forest is not easily conquered, and many have failed before you.
