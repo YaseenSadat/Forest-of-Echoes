@@ -496,7 +496,6 @@ def intro_screen(game_state, player, current_game_map):
     start_time = pygame.time.get_ticks()
     play_music(inventory_use_music, 0.2)
     while running_intro:
-        current_time = pygame.time.get_ticks()
         display_intro(screen, start_time)
         for event in pygame.event.get():
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
@@ -505,8 +504,8 @@ def intro_screen(game_state, player, current_game_map):
                     running_intro = False
                     game_state.reset()
                     start_screen(game_state)
-        if (current_time - start_time) > 27000:
-            running_intro = False
+                elif proceed_rect.collidepoint(event.pos):
+                    running_intro = False
 
         pygame.display.update()
     pygame.mixer.music.stop()
