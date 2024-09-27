@@ -101,7 +101,7 @@ Survival depends on your ability to manage resources, solve puzzles, and avoid t
 ## **Gameplay and Feature Display**
 
 [![Watch the Features Display Video on YouTube](https://img.youtube.com/vi/NC0J7oZYYP4/maxresdefault.jpg)](https://youtu.be/NC0J7oZYYP4)
-[![Watch the Gameplay Video on YouTube](https://youtu.be/KJZAgrf7ezQ/maxresdefault.jpg)](https://youtu.be/KJZAgrf7ezQ)
+[![Watch the Gameplay Video on YouTube](https://img.youtube.com/vi/KJZAgrf7ezQ/maxresdefault.jpg)](https://youtu.be/KJZAgrf7ezQ)
 
 
 ---
