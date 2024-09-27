@@ -8,7 +8,8 @@
 5. [How to Play](#how-to-play)
 6. [Controls](#controls)
 7. [Credits](#credits)
-8. [Installation](#installation)
+8. [Gameplay and Feature Display](#gameplay-and-feature-display)
+9. [Installation](#installation)
 
 ---
 
@@ -94,6 +95,12 @@ Survival depends on your ability to manage resources, solve puzzles, and avoid t
 - **Game Developer:** Yaseen Sadat
 - **Sound Effects and Music:** Various online sound resources.
 - **Graphics and Art:** AI-generated images and custom assets.
+
+---
+
+## **Gameplay and Feature Display**
+
+- [![Watch the Features Display Video on YouTube](https://youtu.be/NC0J7oZYYP4/maxresdefault.jpg)](https://youtu.be/NC0J7oZYYP4)
 
 ---
 
